@@ -1,0 +1,256 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #555;
+}
+
+.main {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background: #e60803;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.menu, .message, .search, .add, .back {
+    flex-grow: 1;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.name {
+    flex-grow: 1;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.menu {
+    background: url(../images/menu.png) no-repeat center;
+    width: 40px;
+    height: 41px;
+}
+
+.message {
+    background: url(../images/msg.png) no-repeat center;
+    width: 79px;
+    height: 67px;
+}
+
+.search {
+    background: url(../images/search.png) no-repeat center;
+    width: 45px;
+    height: 49px;
+}
+
+.add {
+    background: url(../images/add.png) no-repeat center;
+    width: 66px;
+    height: 70px;
+}
+
+.domain {
+    color: #000;
+}
+
+.content-main {
+    background: #f3f3f3;
+}
+
+.content-width {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.content-height {
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.content-rubric {
+    background: #fff;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 300;
+    width: 500px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 39px;
+    padding-left: 20px;
+}
+
+.title-content {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 39px;
+    padding-left: 20px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.info {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+input[type="search"] {
+    background: #fff url("../images/search-input.png") no-repeat scroll 12px center;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5) inset;
+    box-sizing: content-box;
+    font-size: 29px;
+    font-weight: 500;
+    height: 80px;
+    margin: 15px 0;
+    padding-left: 70px;
+    width: 510px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.filter input[type="search"] {
+    width: 310px;
+}
+
+.filter span {
+    color: #e60803;
+    font-size: 29px;
+    font-weight: 400;
+    padding-left: 50px;
+}
+
+.filter i {
+    font-size: 20px;
+}
+
+.filter span:hover {
+    cursor: pointer;
+}
+
+ul {
+    border-top: 2px solid #c4c4c3;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    border-bottom: 2px solid #c4c4c4;
+    border-top: 1px solid #fff;
+    font-size: 36px;
+    font-weight: 900;
+    height: 85px;
+    line-height: 85px;
+    list-style-type: none;
+    background: url("../images/li-background.png") no-repeat scroll 535px center;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(196, 196, 196, 0);
+    transition: box-shadow 0.1s ease;
+}
+
+ul li:hover {
+    box-shadow: -1px -1px 4px 3px rgba(196, 196, 196, 0.5);
+}
+
+.content-rubric ul li {
+    padding-left: 22px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 20px 0 10px;
+    width: 40px;
+}
+
+.icon-auto {
+    background: url("../images/icon-auto.png") no-repeat center;
+    height: 20px;
+}
+
+.icon-radio {
+    background: url("../images/icon-radio.png") no-repeat center;
+    height: 31px;
+}
+
+.icon-inst {
+    background: url("../images/icon-inst.png") no-repeat center;
+    height: 37px;
+}
+
+.list-item {
+    height: 220px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 0 0 rgba(196, 196, 196, 0);
+    overflow: hidden;
+    transition: box-shadow 0.1s ease;
+}
+
+.list-item:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.list-item-image {
+    flex-grow: 1;
+    width: 230px;
+    margin: 20px 20px;
+    background: url("../images/list-image.jpg") no-repeat center / cover;
+}
+
+.list-item-info {
+    flex-grow: 2;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    width: 350px;
+    align-content: space-around;
+}
+
+.list-item-top {
+    background: #c2fbd0;
+}
+
+.list-item-info-title {
+    color: #0066ff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.list-item-info-price {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.list-item-info-desc {
+    color: #3c4d40;
+    font-size: 18px;
+    font-weight: 500;
+    max-height: 46px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-item-info-date {
+    color: #45594a;
+    font-size: 18px;
+    font-weight: 500;
+}
