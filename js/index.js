@@ -3,13 +3,13 @@ $(document).ready(function () {
         underscore = _,
         loading = false, // переменная для проверки идет ли загрузка
         listTemplate = underscore.template([
-            '<div class="list-item">',
-                '<div class="list-item-image" style="' + '<%- image %>' + '"></div>',
-                '<div class="list-item-info">',
-                    '<div class="list-item-info-title"><%- title %></div>',
-                    '<div class="list-item-info-price"><%- price %></div>',
-                    '<div class="list-item-info-desc"><%- description %></div>',
-                    '<div class="list-item-info-date"><%- date %></div>',
+            '<div class="category-list-item">',
+                '<div class="category-list-item-image" style="' + '<%- image %>' + '"></div>',
+                '<div class="category-list-item-info">',
+                    '<div class="category-list-item-info-title"><%- title %></div>',
+                    '<div class="category-list-item-info-price"><%- price %></div>',
+                    '<div class="category-list-item-info-desc"><%- description %></div>',
+                    '<div class="category-list-item-info-date"><%- date %></div>',
                 '</div>',
             '</div>'].join("\n"));
 
@@ -53,7 +53,7 @@ $(document).ready(function () {
 
                     // вставляем в темплейт данные из json-массива, затем вставляем темплейт в ноду листинга
                     var listsHtml = listTemplate({ title: list.title, price: list.price, description: list.description,  date: 'Сегодня 12:44', image: image});
-                    $('.list').append(listsHtml);
+                    $('.category-list').append(listsHtml);
                 });
 
                 // обнуляем после удачной загрузки
