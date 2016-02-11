@@ -13,20 +13,108 @@
     <div class="gray wrap">
         <div class="text title-padding">Filters:</div>
     </div>
+    <!-- выбор категории на сайте -->
     <div class="rubrics-menu clearfix filter wrap">
         <ul class="breadcrumbs category">
             <div class="text info">Select a category</div>
-            <li>
-                <a href="/">All adverts</a>
+            <li class="first-child">
+                <a href="/">Бизнес и услуги</a>
             </li>
             <li>
-                <a href="/">All adverts</a>
+                <a href="/">Реклама</a>
             </li>
             <li>
-                <a href="/">All adverts</a>
+                <a href="/">интернет</a>
             </li>
+            <div class="text title-category">Вентеляция и Кондиционирование</div>
         </ul>
-      </div>
+    </div>
+    <!-- выбор города -->
+    <div class="filter wrap">
+        <div class="js-dropdown dd-block">
+            <div class="text info">Город</div>
+            <div class="dd-label js-dd-label">Город</div>
+            <div class="dd-list js-dd-list">
+                <select name="city" class="js-trait-field" data-type="0">
+                    <option value="all"></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- разделитель -->
+    <div class="gray wrap-delimiter">
+    </div>
+    <!-- выбор цены -->
+    <div class="filter wrap">
+        <div class="js-dropdown dd-block dd-label-select">
+            <div class="dd-label js-dd-label">Min Price</div>
+            <div class="dd-list js-dd-list">
+                <select name="min-price" class="js-trait-field" data-type="0">
+                    <option value="all"></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="js-dropdown dd-block dd-label-select-dop">
+            <div class="dd-label js-dd-label">Max Price</div>
+            <div class="dd-list js-dd-list">
+                <select name="min-price" class="js-trait-field" data-type="0">
+                    <option value="all"></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- разделитель -->
+    <div class="gray wrap-delimiter">
+    </div>
+    <!-- выбор дополнительных параметров -->
+    <div class="filter wrap">
+        <div class="js-dropdown dd-block dd-label-select">
+            <div class="dd-label js-dd-label">Тип кузова</div>
+            <div class="dd-list js-dd-list">
+                <select name="min-price" class="js-trait-field" data-type="0">
+                    <option value="all"></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="js-dropdown dd-block dd-label-select-dop">
+            <div class="dd-label js-dd-label">Год выпуска</div>
+            <div class="dd-list js-dd-list">
+                <select name="min-price" class="js-trait-field" data-type="0">
+                    <option value="all"></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="js-dropdown dd-block dd-label-select-dop">
+            <div class="dd-label js-dd-label">Тип топлива</div>
+            <div class="dd-list js-dd-list">
+                <select name="min-price" class="js-trait-field" data-type="0">
+                    <option value="all"></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="js-dropdown dd-block dd-label-select-dop">
+            <div class="dd-label js-dd-label">Коробка передач</div>
+            <div class="dd-list js-dd-list">
+                <select name="min-price" class="js-trait-field" data-type="0">
+                    <option value="all"></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="js-dropdown dd-block">
+            <div class="text info">Extra options</div>
+            <div class="dd-label dd-label-extra js-dd-label">Electric mirrors, Electric windows, Air condition, Alarm system </div>
+        </div>
+    </div>
+    <div class="gray wrap">
+        <input class="traits-submit fr" type="submit" value="Search">
+    </div>
 </section>
 </body>
 </html>

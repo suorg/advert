@@ -1323,12 +1323,16 @@ label input[type="checkbox"]:checked + span {
 }
 .filter .info {
 	color: #5b8e42;
-	padding-left: 0;
+    font-size: 18px;
+    padding-bottom: 15px;
+    padding-left: 0;
+	font-family: "RobotoMedium";
 }
 .title-padding {
+    font-family: "RobotoBlack";
     font-size: 35px;
-    font-weight: 900;
-    line-height: 39px;
+    height: 60px;
+    line-height: 60px;
     padding-left: 0;
 }
 .breadcrumbs {
@@ -1345,7 +1349,7 @@ label input[type="checkbox"]:checked + span {
 }
 .breadcrumbs a {
   font-size: 24px;
-  color: rgba( 0, 0, 0, 0.769 );
+  color: rgba( 0, 0, 0, 0.7 );
     text-decoration: none;
 }
 .breadcrumbs li:after {
@@ -1363,11 +1367,110 @@ label input[type="checkbox"]:checked + span {
 	background: none;
 }
 .index-categories .filter .category {
-	padding: 20px 0;
+	padding: 15px 0 25px;
+	border-bottom: 2px solid #c4c4c4;
 }
 .breadcrumbs li:first-child {
     display: block;
     vertical-align: top;
     margin-right: 24px;
     position: relative;
+}
+.title-category {
+    font-size: 35px;
+    line-height: 39px;
+    padding-left: 0;
+	font-family: 'RobotoBlack';
+	padding-top: 10px;
+}
+.dd-block {
+    border-radius: 3px;
+    font-size: 16px;
+    position: relative;
+	border-bottom: 2px solid #c4c4c4;
+}
+.dd-label::after {
+    background: rgba(0, 0, 0, 0) url("../images/dropdown_arrow_mobile.png") no-repeat scroll 0 0;
+    content: "";
+	width: 23px;
+	height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0px, -50%);
+	cursor: pointer;
+}
+.dd-label {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    box-shadow: none;
+    font-size: 35px;
+    height: 50px;
+    line-height: 32px;
+    width: auto;
+	font-family: "RobotoMedium";
+}
+.dd-list {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 5px #000;
+    display: none;
+    max-height: 246px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.dd-list li {
+    border-bottom: 1px solid #d1d1d1;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+.dd-list li:last-child {
+    border-bottom: medium none;
+}
+.wrap-delimiter {
+	height: 40px;
+}
+.dd-label-select {
+	border-top: 2px solid #c4c4c4;
+	height: 90px;
+}
+.dd-label-select-dop {
+	height: 90px;
+}
+.dd-label-select .dd-label,
+.dd-label-select-dop .dd-label {
+	line-height: 50px;
+    padding-top: 20px;
+}
+.dd-label-extra {
+	height: auto;
+	padding-bottom: 20px;
+}
+.dd-label-extra::after {
+    background: rgba(0, 0, 0, 0) url("../images/dropdown_arrow_mobile_crest.png") no-repeat scroll 0 0;
+    content: "";
+	width: 29px;
+	height: 29px;
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    transform: translate(0px, -50%);
+	cursor: pointer;
+}
+.traits-submit {
+    background: #e60803 url("../images/search-mobile.png") no-repeat scroll 10px 50%;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "RobotoBold";
+    font-size: 70px;
+    height: 110px;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 80%;
+}
+input[type="submit"] {
+    cursor: pointer;
+    display: block;
 }
